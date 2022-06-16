@@ -241,7 +241,7 @@ appBoris.get('/recuperePiece/:typeVehicule', async(req, res)=> {
     }
 })
  // a revoir
-appBoris.get('/rechercherParKilometre/:kilometre', async(req, res)=> {
+/*appBoris.get('/rechercherParKilometre/:kilometre', async(req, res)=> {
     try {
         const {kilometre}= req.params
         if(!kilometre){
@@ -252,23 +252,23 @@ appBoris.get('/rechercherParKilometre/:kilometre', async(req, res)=> {
     } catch (error) {
         return res.json({success:false, message:error.message})
     }
-})
+})*/
 
-appBoris.get('/rechercheAutre/:autre', async(req,res)=> {
+/*appBoris.get('/rechercheAutre/:autre', async(req,res)=> {
     try {
         
     } catch (error) {
         return res.json({success:false, message:error.message})
     }
-})
+})*/
 
-appBoris.get('/rechercheAutre/:autre', async(req,res)=> {
+/*appBoris.get('/rechercheAutre/:autre', async(req,res)=> {
     try {
         
     } catch (error) {
         return res.json({success:false, message:error.message})
     }
-})
+})*/
 
 appBoris.put('/ModifierVoiture/:id', async(req,res)=> {
     try {
@@ -299,9 +299,9 @@ appBoris.delete('/supprimerVoiture/:id', async(req,res)=> {
     }
 })
 
-appBoris.get('/test', async(req, res)=>{
+/*appBoris.get('/test', async(req, res)=>{
  //console.log('test')
-})
+})*/
 
 appBoris.post('/UploadImage', async(req,res)=>{
     const {file}= req.files
